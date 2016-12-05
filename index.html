@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Mr. CleanHands</title>
+    <meta name="description" content="Mirror GUI">
+    <meta name="author" content="Gopi Thambi GTR DESIGN INC. 2016">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="activeSurface">
+        <div class="weatherWidget">
+            <div class="climate_bg"><img class="weathericon" src="img/icons/wI_3200.svg"></div>
+            <div class="weatherDetails">
+                <h1><div class="temperature">--°</div></h1>
+                <!--<div class="windspeed">--</div>
+                <div class="humidity">--%</div>-->
+                <div class="timeContain">
+                    <h2 class="time">-:-- --</h2></div>
+                <div class="date">--- --- --,----</div>
+                <p class="errorMsg"></p>
+            </div>
+        </div>
+        <div class="contextualWidget">
+            <h3></h3>
+            <br>
+            <div class="subContext"></div>
+        </div>
+        <div class="logoWidget">
+            <div class="logoImg logo1 img100"><img src="IMG/logoWhite.png" /></div>
+            <div class="logoImg logo2 img100"><img src="IMG/drCleanHandsText-01.svg" /></div>
+        </div>
+        <div class="barMeter">
+            <div class="barCover"></div>
+            <img src="IMG/smartMeter-01.svg" />
+        </div>
+        <div class="washResult">
+            <img src="IMG/Icons/emoji-0.svg"/>
+        </div>
+        <div class="debugButtons">
+            <div>Debug
+                <br>
+                <div class="countdown"></div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div>
+                <button class="proximityGuest debugButton">Proximity Guest</button>
+                <button class="proximityMember debugButton">Proximity Member</button>
+                <button class="defaultDialog debugButton">Default</button>
+                <button class="tapTrigger debugButton">Tap Trigger</button>
+            </div>
+            <br>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="js/d3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.simpleWeather.min.js"></script>
+    <script type="text/javascript" src="JS/faucetState.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+
+</html>

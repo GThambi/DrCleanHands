@@ -1,0 +1,48 @@
+{
+    "member": [
+        {
+            "title": "Hello, Guest",
+            "text": "<p>Place your hands under the tap to start washing</p>"
+        },  {
+            "title": "Dr.",
+            "firstname": "Remy",
+            "middlename": "",
+            "lastname": "Hadley",
+            "degree": "M.D.",
+            "sex": "Female",
+            "washed": [  
+                {
+                    "time": 1280464662915,
+                    "rate": 0
+            }, {
+                    "time": 1380464662915,
+                    "rate": 1
+            }, {
+                    "time": 1470464662915,
+                    "rate": 0
+            }, {
+                    "time": 1473474662915,
+                    "rate": 1
+            }, {
+                    "time": 1480464632364,
+                    "rate": 1
+            }, {
+                    "time": 1480471014539,
+                    "rate": 0
+            }, {
+                    "time": 1480461014539,
+                    "rate": 1
+            }, {
+                    "time": 1480451014539,
+                    "rate": 0
+            }, {
+                    "time": 1480441014539,
+                    "rate": 0
+            }, {
+                    "time": 1480421014539,
+                    "rate": 0
+            }
+                ]
+        }
+    ]
+}

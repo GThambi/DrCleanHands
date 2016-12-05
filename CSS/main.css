@@ -1,0 +1,564 @@
+body {
+    font-family: Quicksand, Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    color: white;
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+.primaryBgColor {
+    background-color: #3FA9F5;
+}
+
+.primaryBorderColor {
+    border-color: #3FA9F5;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.primaryColor {
+    color: #3FA9F5;
+}
+
+h1 {
+    font-size: 123px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 41px;
+    margin: 0;
+}
+
+h3 {
+    border: 5px solid #3FA9F5;
+    border-width: 5px;
+    margin: 0 -55px 10px -10px;
+    padding: 8px 8px 8px 0px;
+}
+
+.climate_bg {
+    background-color: black;
+    width: 200px;
+}
+
+.weatherWidget {
+    width: 28%;
+    display: block;
+    float: left;
+}
+
+.activeSurface {
+    width: calc(100% - 90px);
+    height: calc(100% - 90px);
+    padding: 45px;
+    position: relative;
+    overflow: hidden;
+}
+
+html {
+    height: 100%;
+    max-height: 100%;
+}
+
+.weatherDetails {
+    padding: 0 0 0 6px;
+}
+
+.logoWidget {
+    position: absolute;
+    display: flex;
+    width: 300px;
+    padding: 10px 0 0 10px;
+    bottom: 45px;
+    right: 45px;
+}
+
+.img100 img {
+    width: 100%;
+}
+
+.logo1 {
+    width: 100px;
+    padding-right: 10px;
+}
+
+.logo2 {
+    padding-top: 25px;
+}
+
+.emojiContainer {
+    float: left;
+    padding: 20px 8px;
+}
+
+.emoji {
+    width: 60px;
+}
+
+.contextualWidget {
+    width: 470px;
+    padding: 0 48px 0 62px;
+    float: right;
+    position: absolute;
+    top: 110px;
+    right: -632px;
+}
+
+.subContext > div {
+    font-size: 18px;
+    opacity: 0;
+    margin-bottom: 18px;
+}
+
+
+/*.contextualWidget > .subContext {
+	display: flex;
+}*/
+
+.debugButtons {
+    background-color: #8be0f9;
+    position: absolute;
+    display: flex;
+    bottom: 800px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.debugButton {
+    border: 1px solid yellow;
+    background-color: #732cff;
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    font-size: 12px;
+    font-family: Quicksand, Helvetica, Arial, sans-serif;
+    color: white;
+    -webkit-box-shadow: 5px 8px 0 0px #A871C7;
+    box-shadow: 5px 8px 0 0px #A871C7;
+    margin: 20px;
+    display: block;
+}
+
+.debugButton:active {
+    -webkit-box-shadow: inset 5px 8px 0 6px #A871C7;
+    box-shadow: inset 5px 8px 0 6px #A871C7;
+}
+
+.errorMsg {
+    color: red;
+}
+
+.barMeter {
+    height: 700px;
+    width: 150px;
+    border: 3px solid white;
+    position: absolute;
+    bottom: 45px;
+    left: calc(50% - 78px);
+    opacity: 0;
+    z-index: 10;
+}
+
+.barCover {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+}
+
+.barCoverAnimate {
+    -webkit-animation-name: bartimer;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: ease;
+    animation-name: bartimer;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes bartimer {
+    0% {
+        background-color: black;
+    }
+    10% {
+        background-color: black;
+    }
+    25% {
+        background-color: aqua;
+    }
+    50% {
+        background-color: black;
+    }
+    75% {
+        background-color: aqua;
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+
+/* Standard syntax */
+
+@keyframes bartimer {
+    0% {
+        background-color: black;
+    }
+    10% {
+        background-color: black;
+    }
+    25% {
+        background-color: aqua;
+    }
+    50% {
+        background-color: black;
+    }
+    75% {
+        background-color: aqua;
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+.barCoverStop {
+    -webkit-animation-name: bartimerStop;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: ease;
+    animation-name: bartimerStop;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes bartimerStop {
+    0% {
+        background-color: black;
+    }
+    10% {
+        background-color: black;
+    }
+    25% {
+        background-color: aqua;
+    }
+    50% {
+        background-color: black;
+    }
+    75% {
+        background-color: aqua;
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+
+/* Standard syntax */
+
+@keyframes bartimerStop {
+    0% {
+        background-color: black;
+    }
+    10% {
+        background-color: black;
+    }
+    25% {
+        background-color: aqua;
+    }
+    50% {
+        background-color: black;
+    }
+    75% {
+        background-color: aqua;
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+.washResult {
+    position: absolute;
+    width: 124px;
+    bottom: 45px;
+    left: calc(50% - 62px);
+    opacity: 0;
+    z-index: 12;
+}
+
+.washResult.badResult {
+    -webkit-animation-name: badEmoji;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: ease;
+    animation-name: badEmoji;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes badEmoji {
+    0% {
+        opacity: 1;
+    }
+    3% {
+        left: calc(50% - 55px);
+    }
+    5% {
+        left: calc(50% - 69px);
+    }
+    7% {
+        left: calc(50% - 55px);
+    }
+    9% {
+        left: calc(50% - 69px);
+    }
+    11% {
+        left: calc(50% - 55px);
+    }
+    13% {
+        left: calc(50% - 69px);
+    }
+    15% {
+        left: calc(50% - 62px);
+    }
+    20% {
+        opacity: 1;
+    }
+    70% {
+        bottom: 80%;
+        width: 124px;
+        left: calc(50% - 62px);
+    }
+    100% {
+        width: 1000px;
+        bottom: calc(80% - 500px);
+        left: calc(50% - 500px);
+        opacity: 0;
+    }
+}
+
+
+/* Standard syntax */
+
+@keyframes badEmoji {
+    0% {
+        opacity: 1;
+    }
+    3% {
+        left: calc(50% - 55px);
+    }
+    5% {
+        left: calc(50% - 69px);
+    }
+    7% {
+        left: calc(50% - 55px);
+    }
+    9% {
+        left: calc(50% - 69px);
+    }
+    11% {
+        left: calc(50% - 55px);
+    }
+    13% {
+        left: calc(50% - 69px);
+    }
+    15% {
+        left: calc(50% - 62px);
+    }
+    20% {
+        opacity: 1;
+    }
+    70% {
+        bottom: 80%;
+        width: 124px;
+        left: calc(50% - 62px);
+    }
+    100% {
+        width: 1000px;
+        bottom: calc(80% - 500px);
+        left: calc(50% - 500px);
+        opacity: 0;
+    }
+}
+
+.washResult.goodResult {
+    -webkit-animation-name: goodEmoji;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: ease;
+    animation-name: goodEmoji;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+}
+
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes goodEmoji {
+    0% {
+        opacity: 1;
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    3% {
+        -moz-transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    5% {
+        -moz-transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    7% {
+        -moz-transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    9% {
+        -moz-transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    11% {
+        -moz-transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    13% {
+        -moz-transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    15% {
+        -moz-transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    20% {
+        opacity: 1;
+    }
+    70% {
+        bottom: 80%;
+        width: 124px;
+        left: calc(50% - 62px);
+    }
+    100% {
+        width: 1000px;
+        bottom: calc(80% - 500px);
+        left: calc(50% - 500px);
+        opacity: 0;
+    }
+}
+
+
+/* Standard syntax */
+
+@keyframes goodEmoji {
+    0% {
+        opacity: 1;
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    8% {
+        -moz-transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    16% {
+        -moz-transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    24% {
+        -moz-transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    32% {
+        -moz-transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    40% {
+        -moz-transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    48% {
+        -moz-transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    56% {
+        -moz-transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    40% {
+        opacity: 1;
+    }
+    70% {
+        bottom: 80%;
+        width: 124px;
+        left: calc(50% - 62px);
+    }
+    100% {
+        width: 1000px;
+        bottom: calc(80% - 500px);
+        left: calc(50% - 500px);
+        opacity: 0;
+    }
+}
